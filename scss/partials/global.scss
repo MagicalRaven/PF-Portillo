@@ -1,0 +1,48 @@
+$primary: #007bff; 
+$secondary: #6c757d; 
+$success: #28a745; 
+$info: #17a2b8; 
+$warning: #ffc107; 
+$danger: #dc3545;
+$light: #f8f9fa; 
+$dark: #343a40; 
+
+body {
+  background-image: url(https://tse1.mm.bing.net/th/id/OIG2.NgZDInqQtqPTe2rMih3T?pid=ImgGn);
+  background-size: cover;
+  background-position: center;
+  color: #bdbdbd;
+  font-family: 'Roboto', sans-serif;
+
+  // Navbar
+  .navbar {
+    background-color: $dark;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+      color: $light;
+
+      &:hover,
+      &:focus {
+        color: $light;
+      }
+    }
+
+    .nav-link {
+      color: $light;
+
+      &:hover,
+      &:focus {
+        color: $light;
+      }
+    }
+  }
+}
+
+// Footer
+footer {
+  background-color: $dark;
+  color: $light;
+}

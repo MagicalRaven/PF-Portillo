@@ -1,0 +1,134 @@
+// Estilos específicos para la página de galería
+body.pagina-galeria {
+    background-image: url(https://tse2.mm.bing.net/th/id/OIG4.wVB_kpGAmH9j599SAJsG?pid=ImgGn);
+  }
+
+.galeria {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 240px);
+    grid-template-areas:
+      "img1 img2 img3 img3"
+      "img1 img4 img5 img5"
+      "img7 img4 img8 img8";
+    grid-gap: 20px;
+  
+    .item {
+      border: 2px solid #000;
+      border-radius: 15px;
+    }
+  
+    // Estilos para las imágenes de la galería
+    .item1 {
+        grid-area: img1;
+        background-image: url(https://images.animanaturalis.org/posts/blog/simpleveganblog-taco.jpg);
+        background-position: top;
+        background-size: 130%;
+      }
+    
+      .item2 {
+        grid-area: img2;
+        background-image: url(https://www.cuerpomente.com/medio/2020/03/20/plato-vegano_3103e3c6_1200x1200.jpg);
+        background-position: top;
+        background-size: 100%;
+      }
+    
+      .item3 {
+        grid-area: img3;
+        background-image: url(https://www.conasi.eu/blog/wp-content/uploads/2023/03/recetas-veganas-proteicas-d.jpg);
+        background-position: center;
+        background-size: 100%;
+      }
+    
+      .item4 {
+        grid-area: img4;
+        background-image: url(https://www.abasturhub.com/img/blog/platos-veganos-ookkshutterstock_1716972034.jpg);
+        background-position: center;
+        background-size: 300%;
+      }
+    
+      .item5 {
+        grid-area: img5;
+        background-image: url(https://www.gourmet.cl/wp-content/uploads/2012/09/rollitos-vegetarianos.jpg);
+        background-position: top;
+        background-size: 165%;
+      }
+    
+      .item6 {
+        grid-area: img6;
+        background-image: url(https://cdn.shopify.com/s/files/1/0078/5730/7737/files/80535-LasanZa_a_la_bolonZesa_receta_480x480.jpg?v=1657570613);
+        background-position: top;
+        background-size: 160%;
+      }
+    
+      .item7 {
+        grid-area: img7;
+        background-image: url(https://www.debate.com.mx/__export/1694539767251/sites/debate/img/2023/09/12/platillos-mexicanos.jpg_242310155.jpg);
+        background-position: top;
+        background-size: 160%;
+      }
+    
+      .item8 {
+        grid-area: img8;
+        background-image: url(https://administrador.blog.amway.com.mx/media/news/1500X500_A9DQH1w.png);
+        background-position: top;
+        background-size: 140%;
+      }
+    
+      // Estilos responsivos para la galería
+      @media (max-width: 320px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 120px);
+        grid-template-areas:
+      "img1"
+      "img2" 
+      "img3"
+      "img4" 
+      "img5"
+      "img7"
+      "img8";
+    grid-gap: 20px;
+      }
+    
+      @media (min-width: 321px) and (max-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 180px);
+        grid-template-areas:
+      "img1 img2"
+      "img3 img4" 
+      "img5 img7"
+      "img8 img8";
+    grid-gap: 20px;
+      }
+    
+      @media (min-width: 641px) and (max-width: 720px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 200px);
+        grid-template-areas:
+      "img1 img2"
+      "img3 img4" 
+      "img5 img7"
+      "img8 img8";
+    grid-gap: 20px;
+      }
+    
+      @media (min-width: 721px) and (max-width: 854px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 220px);
+        grid-template-areas:
+      "img1 img2"
+      "img3 img4" 
+      "img5 img7"
+      "img8 img8";
+    grid-gap: 20px;
+      }
+    
+      @media (min-width: 855px) and (max-width: 1080px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 240px);
+      }
+    }
