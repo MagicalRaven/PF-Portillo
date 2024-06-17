@@ -1,0 +1,9 @@
+[
+    {"city": "Madrid", "temperature": 30, "humidity": 50},
+    {"city": "Barcelona", "temperature": 28, "humidity": 60},
+    {"city": "Valencia", "temperature": 32, "humidity": 55},
+    {"city": "Sevilla", "temperature": 35, "humidity": 40},
+    {"city": "Bilbao", "temperature": 22, "humidity": 70},
+    {"city": "Granada", "temperature": 29, "humidity": 45},
+    {"city": "Malaga", "temperature": 27, "humidity": 65}
+]

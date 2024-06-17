@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Clima Avanzado</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+</head>
+<body>
+    <h1>Simulador de Clima Avanzado</h1>
+    <div id="controls">
+        <button id="loadData">Cargar Datos de Clima</button>
+        <label for="citySelect">Seleccione una Ciudad:</label>
+        <select id="citySelect"></select>
+        <label for="tempFilter">Filtrar por Temperatura:</label>
+        <input type="range" id="tempFilter" min="0" max="50" value="50">
+        <span id="tempValue">50°C</span>
+        <label for="humidityFilter">Filtrar por Humedad:</label>
+        <input type="range" id="humidityFilter" min="0" max="100" value="100">
+        <span id="humidityValue">100%</span>
+    </div>
+    <div id="weatherData"></div>
+    <canvas id="weatherChart" width="400" height="200"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
