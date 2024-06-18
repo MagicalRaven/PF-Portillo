@@ -2,14 +2,17 @@ class WeatherSimulator {
     constructor() {
         this.weatherData = [];
         this.filteredData = [];
+        this.chart = null;
+        this.isDarkMode = false;
         this.init();
     }
 
-    async init() {
+    init() {
         document.getElementById('loadData').addEventListener('click', () => this.loadWeatherData());
-        document.getElementById('tempFilter').addEventListener('input', (e) => this.filterData());
-        document.getElementById('humidityFilter').addEventListener('input', (e) => this.filterData());
+        document.getElementById('tempFilter').addEventListener('input', () => this.filterData());
+        document.getElementById('humidityFilter').addEventListener('input', () => this.filterData());
         document.getElementById('citySelect').addEventListener('change', (e) => this.displayCityWeather(e.target.value));
+        document.getElementById('toggleTheme').addEventListener('click', () => this.toggleTheme());
 
         const tempFilter = document.getElementById('tempFilter');
         tempFilter.addEventListener('input', () => document.getElementById('tempValue').textContent = `${tempFilter.value}°C`);
@@ -20,19 +23,23 @@ class WeatherSimulator {
         this.loadFromLocalStorage();
     }
 
-    async loadWeatherData() {
-        try {
-            const response = await fetch('data.json');
-            if (!response.ok) {
-                throw new Error('Error al cargar los datos');
+    loadWeatherData() {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'data.json', true);
+        xhr.onload = () => {
+            if (xhr.status === 200) {
+                this.weatherData = JSON.parse(xhr.responseText);
+                this.populateCitySelect();
+                this.filterData();
+                this.saveToLocalStorage();
+            } else {
+                console.error('Error al cargar los datos');
             }
-            this.weatherData = await response.json();
-            this.populateCitySelect();
-            this.filterData();
-            this.saveToLocalStorage();
-        } catch (error) {
-            console.error('Error:', error);
-        }
+        };
+        xhr.onerror = () => {
+            console.error('Error de red');
+        };
+        xhr.send();
     }
 
     populateCitySelect() {
@@ -120,6 +127,12 @@ class WeatherSimulator {
                 }
             }
         });
+    }
+
+    toggleTheme() {
+        this.isDarkMode = !this.isDarkMode;
+        document.body.classList.toggle('dark-mode', this.isDarkMode);
+        document.getElementById('toggleTheme').textContent = this.isDarkMode ? 'Cambiar a Modo Claro' : 'Cambiar a Modo Oscuro';
     }
 
     saveToLocalStorage() {

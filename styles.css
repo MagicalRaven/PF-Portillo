@@ -1,11 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 h1 {
@@ -17,18 +18,80 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 button, select, input[type="range"] {
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
 }
 
 #weatherData {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 canvas {
     margin-top: 20px;
+}
+
+.cityWeather {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.cityWeather:hover {
+    transform: scale(1.05);
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode #controls {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode .cityWeather {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.dark-mode button {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.dark-mode button:hover {
+    background-color: #007bff;
 }
