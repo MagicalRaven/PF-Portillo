@@ -59,10 +59,3 @@ Contribuciones
 
 - **Node.js** y **npm** instalados en tu sistema.
 
-### Clonación del Repositorio
-
-```bash
-git clone https://github.com/usuario/nombre-del-repositorio.git
-cd nombre-del-repositorio
-Instalación de Dependencias
-npm install
