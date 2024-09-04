@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Tienda de Artículos de Computación
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
 
-## Available Scripts
+Esta es una aplicación de comercio electrónico desarrollada con **React** y **Firebase** para la venta de artículos de computación. Los usuarios pueden navegar por una lista de productos, filtrarlos por categorías, agregar productos a su carrito, y proceder a realizar la compra a través de un sistema de checkout.
 
-In the project directory, you can run:
+La aplicación está diseñada para ser moderna y fácil de usar, con una interfaz minimalista y funcionalidades avanzadas, como control de stock, generación de PDF para recibos, y manejo del carrito de compras.
 
-### `npm start`
+## Versión
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Versión actual**: 1.0.0
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Funcionalidades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Visualización de Productos**
+   - Los usuarios pueden ver una lista de artículos de computación, como CPU, GPU, Motherboard, RAM, Discos Duros, Enfriamientos y Cases.
+   - Filtro por categorías para facilitar la búsqueda de productos específicos.
+   
+2. **Carrito de Compras**
+   - Añadir productos al carrito desde la página de detalles del producto.
+   - Control de cantidad para evitar que se agregue más de lo que hay en stock.
+   - Visualización de los productos en el carrito, con opción para eliminar productos.
+   - Cálculo automático del precio total en función de la cantidad de productos en el carrito.
+   - El carrito se vacía automáticamente después de completar la compra.
 
-### `npm run build`
+3. **Proceso de Checkout**
+   - Formulario para introducir los datos del cliente (nombre, dirección).
+   - Confirmación de la compra y redirección al checkout.
+   
+4. **Control de Stock**
+   - No se permite agregar productos al carrito si el stock es 0.
+   - El botón "Agregar al carrito" se desactiva cuando se intenta agregar más productos de los disponibles.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. **Generación de PDF para Recibo**
+   - Al completar una compra, se puede generar un recibo en formato PDF con los detalles de los productos adquiridos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tecnologías Utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React**: Framework de JavaScript para la construcción de interfaces de usuario.
+- **Firebase**:
+  - **Firestore**: Base de datos NoSQL para almacenar los productos.
+  - **Firebase Authentication** (opcional): Para autenticación de usuarios.
+- **React Router**: Para la navegación entre páginas.
+- **jsPDF**: Librería para la generación de PDF.
+- **Bootstrap**: Framework CSS para el diseño de la interfaz de usuario.
 
-### `npm run eject`
+## Instalación y Configuración
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Requisitos Previos
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Node.js** y **npm** instalados en tu sistema.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Clonación del Repositorio
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/usuario/nombre-del-repositorio.git
+cd nombre-del-repositorio
+Instalación de Dependencias
+npm install
 
-## Learn More
+Funcionalidades Futuras
+Autenticación de usuarios: Para permitir a los usuarios crear cuentas y acceder a sus compras anteriores.
+Pasarela de Pago: Integrar un sistema de pagos en línea para que los usuarios puedan realizar transacciones seguras.
+Mejora en la gestión de stock: Actualización automática del stock tras cada compra.
+Contribuciones
+¡Las contribuciones son bienvenidas! 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### Explicación del contenido:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Descripción**: Una breve introducción sobre la aplicación y qué problema resuelve.
+2. **Versión**: La versión actual de la aplicación.
+3. **Funcionalidades**: Resumen detallado de las características implementadas.
+4. **Tecnologías**: Lista de las tecnologías utilizadas para construir la aplicación.
+5. **Instalación y Configuración**: Instrucciones paso a paso para clonar el repositorio, instalar las dependencias, configurar Firebase y ejecutar la aplicación.
+6. **Futuras Funcionalidades**: Posibles mejoras y nuevas características que pueden ser agregadas en el futuro.
+7. **Contribuciones**: Una invitación a otros desarrolladores a contribuir al proyecto.
+8. **Licencia**: Tipo de licencia utilizada para el proyecto.
