@@ -1,0 +1,14 @@
+.item-list-container {
+    padding: 2rem;
+    background-color: #343434;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 204, 0.3);
+  }
+  
+  .item-list-container h1 {
+    color: #00ffcc;
+    text-align: center;
+    text-shadow: 0 0 10px #00ffcc;
+    margin-bottom: 2rem;
+  }
+  

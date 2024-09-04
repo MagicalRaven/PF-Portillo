@@ -1,0 +1,24 @@
+.cart-container {
+    padding: 20px;
+  }
+  
+  .cart-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .cart-container img {
+    margin-right: 10px;
+  }
+  
+  .cart-container button {
+    margin-left: 10px;
+  }
+  

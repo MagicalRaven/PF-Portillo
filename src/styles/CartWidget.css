@@ -1,0 +1,33 @@
+/* CartWidget estilo oscuro con letras Neon */
+.cart-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+.btn-outline-primary {
+    border-color: #00ffcc;
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+    transition: background-color 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #00ffcc;
+    color: #000000;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  }
+  
+  .fas.fa-shopping-cart {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+  }
+  
+  .badge {
+    background-color: #ff71aa;
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 50%;
+    text-shadow: 0 0 5px #ff0066, 0 0 10px #fb7eb0;
+  }
+  
