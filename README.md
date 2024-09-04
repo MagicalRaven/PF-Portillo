@@ -36,6 +36,13 @@ La aplicación está diseñada para ser moderna y fácil de usar, con una interf
 5. **Generación de PDF para Recibo**
    - Al completar una compra, se puede generar un recibo en formato PDF con los detalles de los productos adquiridos.
 
+Funcionalidades Futuras
+Autenticación de usuarios: Para permitir a los usuarios crear cuentas y acceder a sus compras anteriores.
+Pasarela de Pago: Integrar un sistema de pagos en línea para que los usuarios puedan realizar transacciones seguras.
+Mejora en la gestión de stock: Actualización automática del stock tras cada compra.
+Contribuciones
+¡Las contribuciones son bienvenidas! 
+
 ## Tecnologías Utilizadas
 
 - **React**: Framework de JavaScript para la construcción de interfaces de usuario.
@@ -59,24 +66,3 @@ git clone https://github.com/usuario/nombre-del-repositorio.git
 cd nombre-del-repositorio
 Instalación de Dependencias
 npm install
-
-Funcionalidades Futuras
-Autenticación de usuarios: Para permitir a los usuarios crear cuentas y acceder a sus compras anteriores.
-Pasarela de Pago: Integrar un sistema de pagos en línea para que los usuarios puedan realizar transacciones seguras.
-Mejora en la gestión de stock: Actualización automática del stock tras cada compra.
-Contribuciones
-¡Las contribuciones son bienvenidas! 
-
-
----
-
-### Explicación del contenido:
-
-1. **Descripción**: Una breve introducción sobre la aplicación y qué problema resuelve.
-2. **Versión**: La versión actual de la aplicación.
-3. **Funcionalidades**: Resumen detallado de las características implementadas.
-4. **Tecnologías**: Lista de las tecnologías utilizadas para construir la aplicación.
-5. **Instalación y Configuración**: Instrucciones paso a paso para clonar el repositorio, instalar las dependencias, configurar Firebase y ejecutar la aplicación.
-6. **Futuras Funcionalidades**: Posibles mejoras y nuevas características que pueden ser agregadas en el futuro.
-7. **Contribuciones**: Una invitación a otros desarrolladores a contribuir al proyecto.
-8. **Licencia**: Tipo de licencia utilizada para el proyecto.
